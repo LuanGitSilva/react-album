@@ -8,8 +8,10 @@ type Props = {
 
 export const AlbumItem = ({ id, title }: Props) => {
     return (
-        <Link to={`/album/${id}`} className="album">
-            {title}
-        </Link>
+        <div className='albumGeral'>
+            <Link to={`/album/${id}`} className="album">
+                {title}
+            </Link>
+        </div>
     );
 }

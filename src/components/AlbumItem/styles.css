@@ -1,8 +1,10 @@
 .album {
     border: 1.5px solid rgb(121, 121, 121);
+    background-color: #EEE;
     border-radius: 10px;
     padding: 20px;
-    margin: 10px;
+    margin: 10px auto;
+    max-width: 500px;
     cursor: pointer;
     display: block;
     text-decoration: none;
@@ -11,7 +13,12 @@
     transition: .3s;
 }
 .album:hover {
-    background-color: #EEE;
+    background-color: rgb(220, 220, 220);
     border: 1.5px solid #000;
     font-weight: bold;
+}
+@media (max-width: 600px) {
+    .album {
+        margin-inline: 10px;
+    }
 }

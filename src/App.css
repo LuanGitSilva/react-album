@@ -1,6 +1,23 @@
-h1 {
-  text-align: center;
+html {
+  background-color: rgb(180, 210, 223);
 }
+h1.title {
+  text-align: center;
+  font-size: 35px;
+}
+.explicar {
+  font-weight: bold;
+  font-size: 18px;
+  max-width: 500px;
+  margin-inline: auto;
+  padding-block: 20px;
+}
+
+h1 {
+text-align: center;
+font-size: 25px;
+}
+
 button {
   display: block;
   margin-inline: auto;
@@ -24,5 +41,8 @@ img {
 @media (max-width: 620px) {
   img {
     width: 90%;
+  }
+  .explicar {
+    margin-inline: 20px;
   }
 }

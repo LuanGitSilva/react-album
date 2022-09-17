@@ -22,9 +22,11 @@ export const Photos = () => {
 
     const loadPhotos = async (id: string) => {
         setLoading(true);
-        const photos = await api.getAllPhotos(id);
-        setList( photos );
-        setLoading(false);
+        setTimeout( async ()=>{
+            const photos = await api.getAllPhotos(id);
+            setList( photos );
+            setLoading(false);
+        },1000);
     }
 
     const loadAlbumInfo = async (id: string) => {

@@ -13,9 +13,11 @@ export const Home = () => {
 
     const loadAlbums = async () => {
         setLoading(true);
-        const albums = await api.getAllAlbums();
-        setAlbums( albums );
-        setLoading(false);
+        setTimeout( async ()=>{
+            const albums = await api.getAllAlbums();
+            setAlbums( albums );
+            setLoading(false);
+        },1000);
     }
 
     return (

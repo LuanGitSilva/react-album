@@ -18,9 +18,11 @@ export const Photo = () => {
 
     const loadPhoto = async (id: string) => {
         setLoading(true);
-        const photo = await api.getPhoto(id);
-        setPhotoInfo( photo );
-        setLoading(false);
+        setTimeout( async ()=>{
+            const photo = await api.getPhoto(id);
+            setPhotoInfo( photo );
+            setLoading(false);
+        },1000);    
     }
 
     const handleBackButton = () => {
